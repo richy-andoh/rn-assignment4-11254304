@@ -117,8 +117,9 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
     },
     subheader: {
-        fontSize: 18,
+        fontSize: 16,
         marginBottom: 16,
+        opacity: 0.7
     },
     sectionTitle: {
         fontSize: 20,
