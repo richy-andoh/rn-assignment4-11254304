@@ -128,4 +128,4 @@ yarn start
 
 
 ### Home Screen
-![Screenshot1](assets/screenshot2.png)
+![Screenshot2](assets/screenshot2.png)
