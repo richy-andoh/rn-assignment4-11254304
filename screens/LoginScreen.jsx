@@ -51,7 +51,7 @@ const LoginScreen = ({ navigation }) => {
       </View>
 
       <Text style={{ textAlign: "center", marginTop: 40}}>
-        <span style={{ opacity: 0.4}}>Haven't and account?</span> <span style={{color: "#356899", }}>Register</span>
+        <Text style={{ opacity: 0.4}}>Haven't and account?</Text> <Text style={{color: "#356899", }}>Register</Text>
       </Text>
     </SafeAreaView>
   );
