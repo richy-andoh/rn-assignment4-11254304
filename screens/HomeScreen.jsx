@@ -10,10 +10,11 @@ import apple from "../assets/Icons/apple.png";
 import amazon from "../assets/Icons/amazon.png";
 import ebay from "../assets/Icons/ebay.png";
 import burger from "../assets/Icons/burger.png";
-import slide from "../assets/Icons/slide.png"
+import slide from "../assets/Icons/slide.png";
+import richy from "../assets/Icons/richy.png";
 
 const popularJobs = [
-    { id: '1', title: 'Software Engineer', company: 'ABC Corp', location: 'New York, NY', backgroundColor: '#FFCDD2', icon: facebook, salary: '$120,000' },
+    { id: '1', title: 'Software Engineer', company: 'ABC Corp', location: 'New York, NY', backgroundColor: 'blue', icon: facebook, salary: '$120,000' },
     { id: '2', title: 'Product Manager', company: 'XYZ Inc', location: 'San Francisco, CA', backgroundColor: '#C8E6C9', icon: amazon, salary: '$130,000' },
     { id: '3', title: 'Graphic Designer', company: 'Creative Studio', location: 'Los Angeles, CA', backgroundColor: '#BBDEFB', icon: ebay, salary: '$70,000' },
     { id: '4', title: 'Data Analyst', company: 'Data Corp', location: 'Chicago, IL', backgroundColor: '#FFECB3', icon: google, salary: '$90,000' },
@@ -39,13 +40,13 @@ export default function HomeScreen({ route }) {
 
     return (
         <View style={styles.container}>
-            <View style={{ display: "flex", flexDirection: "row", justifyContent: "space-between", marginVertical: 15}}>
+            <View style={{ display: "flex", flexDirection: "row", justifyContent: "space-between", marginVertical: 30}}>
                 <View>
                     <Text style={styles.header}> {name}</Text>
                     <Text style={styles.subheader}> {email}</Text>
                 </View>
-                <View style={{ backgroundColor: "white", padding: 20, borderRadius: 50 }}>
-                    <Image source={facebook} style={{ height: 40, width: 40 }} />
+                <View style={{ borderRadius: 50, width: 60, height: 60, borderBlockColor: "gray" }}>
+                    <Image source={richy} style={{ height: 65, width: 65 }} />
                 </View>
             </View>
 
@@ -54,7 +55,6 @@ export default function HomeScreen({ route }) {
                     <TextInput
                         style={styles.input}
                         placeholder="Search a job or position"
-                        placeholderOpacity="0.5"
                     />
                     <Image style={styles.searchIcon} source={search} />
                 </View>
@@ -77,7 +77,7 @@ export default function HomeScreen({ route }) {
 
             </View>
 
-            <View style={{ marginTop: 60 }}>
+            <View style={{ marginTop: 80 }}>
                 <View style={{ display: "flex", flexDirection: "row", justifyContent: "space-between"}}>
                 <Text style={styles.sectionTitle}>Featured Jobs</Text>
                 <Text style={{ opacity: 0.5, marginTop: 26 }}>See All</Text>
@@ -136,7 +136,8 @@ const styles = StyleSheet.create({
 
     input: {
         height: 70,
-        width: 260,
+        fontSize: 17,
+        width: 280,
         marginTop: 25,
         paddingVertical: 20,
         paddingLeft: 55,
@@ -144,6 +145,7 @@ const styles = StyleSheet.create({
         borderRadius: 15,
         fontWeight: "700",
         border: 1,
+        opacity: 0.7
     },
 
     searchBox: {
@@ -154,13 +156,13 @@ const styles = StyleSheet.create({
         width: 28,
         height: 28,
         postion: "absolute",
-        top: -40,
-        left: 11,
+        top: -42,
+        left: 13,
     },
 
     toggleSlider: {
         width: 55,
-        height: 54,
+        height: 60,
         backgroundColor: "white",
         borderRadius: 20,
         marginTop: 22,

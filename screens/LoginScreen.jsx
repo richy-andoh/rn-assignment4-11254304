@@ -4,8 +4,8 @@ import { View, Text, TextInput, Button, StyleSheet, Image } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import Divider from '../components/Divider';
 import facebook from "../assets/Icons/facebook.png"
-import google from "../assets/Icons/google.png"
-import apple from "../assets/Icons/apple.png"
+import google from "../assets/Icons/google.png";
+import apple from "../assets/Icons/apple.png";
 
 const LoginScreen = ({ navigation }) => {
   const [name, setName] = useState('');
@@ -28,14 +28,16 @@ const LoginScreen = ({ navigation }) => {
           placeholder="Name"
           value={name}
           onChangeText={setName}
+          required
         />
         <TextInput
           style={styles.input}
           placeholder="Email"
           value={email}
           onChangeText={setEmail}
+          required
         />
-        <Button style={styles.button} title="Login" onPress={handleLogin} />
+        <Button style={[styles.button, {paddingVertical: 10}]} title="Log in" onPress={handleLogin} />
       </View>
 
 
@@ -50,7 +52,7 @@ const LoginScreen = ({ navigation }) => {
         <View style={{ backgroundColor: "white", padding: 20, borderRadius: 50}}><Image style={{ height: 40, width: 40 }} source={facebook} /></View>
       </View>
 
-      <Text style={{ textAlign: "center", marginTop: 40}}>
+      <Text style={{ textAlign: "center", marginTop: 50}}>
         <Text style={{ opacity: 0.4}}>Haven't and account?</Text> <Text style={{color: "#356899", }}>Register</Text>
       </Text>
     </SafeAreaView>
@@ -87,8 +89,8 @@ const styles = StyleSheet.create({
 
   input: {
     height: 48,
-    borderColor: 'gray',
-    borderWidth: 0.5,
+    borderColor: "gray",
+    borderWidth: 0.2,
     marginBottom: 12,
     padding: 8,
     borderRadius: 10,
@@ -102,7 +104,7 @@ const styles = StyleSheet.create({
     paddingVertical: 5
   },
 
-  btn: {
+  button: {
     height: 48,
     marginTop: 10,
     padding: 10,
@@ -110,14 +112,14 @@ const styles = StyleSheet.create({
 
   divider: {
     opacity: 0.5,
-    marginTop: 40
+    marginTop: 50
   },
 
   icons: {
     display: "flex",
     flexDirection: "row",
     justifyContent: "space-around",
-    marginTop: 20,
+    marginTop: 40,
   }
 
 });

@@ -4,7 +4,7 @@ import facebook from "../assets/Icons/facebook.png";
 
 export default function JobCard({ job, backgroundColor }) {
     return (
-        <View style={[styles.card, { backgroundColor }]}>
+        <View style={[styles.card, { backgroundColor, opacity: 0.7, marginTop: 30 }]}>
             <View style={{ display: "flex", flexDirection: "row", justifyContent: "space-around", alignItems: "center" }}>
                 <View style={{ backgroundColor: "white", padding: 20, borderRadius: 50}}>
                     <Image source={job.icon} style={{ height: 50, width: 50 }} />

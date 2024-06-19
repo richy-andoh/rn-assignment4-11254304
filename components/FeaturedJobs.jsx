@@ -2,7 +2,7 @@ import { StyleSheet, TouchableOpacity, View, Text, Image } from "react-native";
 
 export const FeaturedJobs = ({ job }) => {
     return (
-        <TouchableOpacity>
+        <TouchableOpacity style={{ marginTop: 20}}>
             <View style={[styles.featuredCard, { display: "flex", flexDirection: "row", justifyContent: "space-between", alignContent: "center" }]}>
                 <View style={{ backgroundColor: "white", borderRadius: 50}}>
                     <Image source={job.icon} style={{ height: 80, width: 80 }} />
