@@ -90,23 +90,22 @@ The application is styled using React Native's `StyleSheet` to closely match the
 rn-assignment4-ID/
 ├── App.js
 ├── components/
-│   ├── JobCard.js
-│   └── ...
+│   ├── JobCard.jsx
+│   └── FeatturedJobs.jsx
 ├── screens/
-│   ├── LoginScreen.js
-│   ├── HomeScreen.js
+│   ├── LoginScreen.jsx
+│   ├── HomeScreen.jsx
 │   └── ...
 ├── assets/
 │   ├── jobIcons/
-│   │   ├── exercise.png
-│   │   ├── study.png
+│   │   ├── google.png
+│   │   ├── facebook.png
 │   │   └── ...
 │  
 ├── screenshots/
 │   ├── login-screen.png
 │   ├── home-screen.png
-│   ├── popular-jobs.png
-│   └── featured-jobs.png
+│   
 ├── README.md
 └── package.json
 
